@@ -21,22 +21,26 @@ Pod::Spec.new do |s|
 TODO: Add long description of the pod here.
                        DESC
 
-  s.homepage         = 'https://github.com/1055263815@qq.com/MTMWPhotoBrowser'
+  s.homepage         = 'https://github.com/qiandashuai/MTMWPhotoBrowser.git'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { '1055263815@qq.com' => 'baofeng.qian@maitao.com' }
-  s.source           = { :git => 'https://github.com/1055263815@qq.com/MTMWPhotoBrowser.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/qiandashuai/MTMWPhotoBrowser.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '9.0'
 
   s.source_files = 'MTMWPhotoBrowser/Classes/**/*'
   
-  # s.resource_bundles = {
-  #   'MTMWPhotoBrowser' => ['MTMWPhotoBrowser/Assets/*.png']
-  # }
+   s.resource_bundles = {
+     'MTMWPhotoBrowser' => ['MTMWPhotoBrowser/Assets/*']
+   }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
+  s.dependency 'MBProgressHUD', '~> 0.9'
+  s.dependency 'DACircularProgress', '~> 2.3'
+  s.dependency 'PINRemoteImage/iOS', '= 3.0.0-beta.13'
+  s.dependency 'SDWebImage', '~> 5.0'
 end

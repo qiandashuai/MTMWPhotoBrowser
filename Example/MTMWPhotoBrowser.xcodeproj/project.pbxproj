@@ -59,13 +59,13 @@
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		61082D155C13FBBD76FEB666 /* Pods-MTMWPhotoBrowser_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MTMWPhotoBrowser_Tests.debug.xcconfig"; path = "Target Support Files/Pods-MTMWPhotoBrowser_Tests/Pods-MTMWPhotoBrowser_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		6C41A879BD93F7F78374B18A /* Pods_MTMWPhotoBrowser_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MTMWPhotoBrowser_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		6D38D582D51FF2A8CCCF0E12 /* MTMWPhotoBrowser.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = MTMWPhotoBrowser.podspec; path = ../MTMWPhotoBrowser.podspec; sourceTree = "<group>"; };
+		6D38D582D51FF2A8CCCF0E12 /* MTMWPhotoBrowser.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = MTMWPhotoBrowser.podspec; path = ../MTMWPhotoBrowser.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9B84BC784E02BE8083D2D392 /* Pods_MTMWPhotoBrowser_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MTMWPhotoBrowser_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A73CEEBF45652F89EA6CF8A8 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		A73CEEBF45652F89EA6CF8A8 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		D3904EE6492E560B95A589EF /* Pods-MTMWPhotoBrowser_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MTMWPhotoBrowser_Example.debug.xcconfig"; path = "Target Support Files/Pods-MTMWPhotoBrowser_Example/Pods-MTMWPhotoBrowser_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		E479B24F72F5C4B2A0F6BB92 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		E479B24F72F5C4B2A0F6BB92 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		EF58A400BF88BEDFD5A9AF9B /* Pods-MTMWPhotoBrowser_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MTMWPhotoBrowser_Example.release.xcconfig"; path = "Target Support Files/Pods-MTMWPhotoBrowser_Example/Pods-MTMWPhotoBrowser_Example.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -193,7 +193,6 @@
 				61082D155C13FBBD76FEB666 /* Pods-MTMWPhotoBrowser_Tests.debug.xcconfig */,
 				11AEC21717AC16DB55D67633 /* Pods-MTMWPhotoBrowser_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -259,6 +258,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -303,11 +303,21 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-MTMWPhotoBrowser_Example/Pods-MTMWPhotoBrowser_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/DACircularProgress/DACircularProgress.framework",
+				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
 				"${BUILT_PRODUCTS_DIR}/MTMWPhotoBrowser/MTMWPhotoBrowser.framework",
+				"${BUILT_PRODUCTS_DIR}/PINOperation/PINOperation.framework",
+				"${BUILT_PRODUCTS_DIR}/PINRemoteImage/PINRemoteImage.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DACircularProgress.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MTMWPhotoBrowser.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PINOperation.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PINRemoteImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
