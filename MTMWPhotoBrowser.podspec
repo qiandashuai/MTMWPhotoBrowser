@@ -32,9 +32,7 @@ TODO: Add long description of the pod here.
 
   s.source_files = 'MTMWPhotoBrowser/Classes/**/*'
   
-   s.resource_bundles = {
-     'MTMWPhotoBrowser' => ['MTMWPhotoBrowser/Assets/*.png']
-   }
+   s.resources = 'MTMWPhotoBrowser/Assets/*.png'
 
    s.frameworks = 'ImageIO', 'QuartzCore', 'AssetsLibrary', 'MediaPlayer'
   # s.frameworks = 'UIKit', 'MapKit'
