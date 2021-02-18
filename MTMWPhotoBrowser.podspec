@@ -33,10 +33,10 @@ TODO: Add long description of the pod here.
   s.source_files = 'MTMWPhotoBrowser/Classes/**/*'
   
    s.resource_bundles = {
-     'MTMWPhotoBrowser' => ['MTMWPhotoBrowser/Assets/*']
+     'MTMWPhotoBrowser' => ['MTMWPhotoBrowser/Assets/*.png']
    }
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
+   s.frameworks = 'ImageIO', 'QuartzCore', 'AssetsLibrary', 'MediaPlayer'
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
   s.dependency 'MBProgressHUD', '~> 0.9'
