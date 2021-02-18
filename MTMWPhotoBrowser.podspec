@@ -39,6 +39,5 @@ TODO: Add long description of the pod here.
   # s.dependency 'AFNetworking', '~> 2.3'
   s.dependency 'MBProgressHUD', '~> 0.9'
   s.dependency 'DACircularProgress', '~> 2.3'
-  s.dependency 'PINRemoteImage/iOS', '= 3.0.0-beta.13'
   s.dependency 'SDWebImage', '~> 5.0'
 end

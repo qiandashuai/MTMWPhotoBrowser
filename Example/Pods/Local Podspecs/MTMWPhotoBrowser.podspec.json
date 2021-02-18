@@ -1,9 +1,9 @@
 {
   "name": "MTMWPhotoBrowser",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "summary": "A short description of MTMWPhotoBrowser.",
   "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/1055263815@qq.com/MTMWPhotoBrowser",
+  "homepage": "https://github.com/qiandashuai/MTMWPhotoBrowser.git",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
@@ -12,22 +12,26 @@
     "1055263815@qq.com": "baofeng.qian@maitao.com"
   },
   "source": {
-    "git": "https://github.com/1055263815@qq.com/MTMWPhotoBrowser.git",
-    "tag": "0.1.0"
+    "git": "https://github.com/qiandashuai/MTMWPhotoBrowser.git",
+    "tag": "0.2.0"
   },
   "platforms": {
     "ios": "9.0"
   },
   "source_files": "MTMWPhotoBrowser/Classes/**/*",
+  "resources": "MTMWPhotoBrowser/Assets/*.png",
+  "frameworks": [
+    "ImageIO",
+    "QuartzCore",
+    "AssetsLibrary",
+    "MediaPlayer"
+  ],
   "dependencies": {
     "MBProgressHUD": [
       "~> 0.9"
     ],
     "DACircularProgress": [
       "~> 2.3"
-    ],
-    "PINRemoteImage/iOS": [
-      "= 3.0.0-beta.13"
     ],
     "SDWebImage": [
       "~> 5.0"
