@@ -71,5 +71,7 @@
 // Navigation
 - (void)showNextPhotoAnimated:(BOOL)animated;
 - (void)showPreviousPhotoAnimated:(BOOL)animated;
+- (void)currentIndexChange:(NSUInteger)index;
+- (NSUInteger)numberOfPhotos;
 
 @end
